@@ -1,0 +1,148 @@
+#service{
+    background-color: $bg_dark;
+    padding: 50px 0;
+    .top{
+        .img{
+            width: 55%;
+            position: relative;
+            img{
+                position: absolute;
+                border-radius: 3px;
+            }
+            .big{
+                width: 70%;
+                top: 0;
+                left: 50%;
+                transform: translateX(-50%);
+                height: 290px;
+                z-index: 2;
+            }
+            .small{
+                width: 40%;
+                left: 5%;
+                bottom: 0;
+                height: 200px;
+                z-index: 1;
+            }
+            .xsmall{
+                width: 30%;
+                right: 5%;
+                bottom: 15%;
+                height: 150px;
+                z-index: 3;
+            }
+        }
+        .details{
+            padding: 40px 0;
+            width: 40%;
+            h3{
+                font-size: 30px;
+                color: $bg_light;
+            }
+            p{
+                color: $text_dark;
+            }
+            button{
+                @include button($bg_dark,$bg_light);
+                letter-spacing: 3px;
+            }
+        }
+    }
+    .main{
+        .title{
+            @include title('01');
+            h4{
+                @include titleName()
+            }
+        }
+        .info{
+            .img{
+                img{
+                    cursor: pointer;
+                }
+            }
+            .text{
+                h5{
+                    font-size: 20px;
+                    color: $text_light;
+                    font-weight: 600;
+                    text-transform: capitalize;
+                    letter-spacing: 2px;
+                    span{
+                        font-family: sans-serif;
+                        color: $bg_light;
+                        letter-spacing: 1px;
+                    }
+                }
+                p{
+                    font-size: 14px;
+                    font-weight: 400;
+                    letter-spacing: 1px;
+                    line-height: 1.6;
+                    word-spacing: 2px;
+                    color: $text_dark;
+                }
+            }
+        }
+        
+    }
+    
+}
+#service_btm{
+    padding: 100px 0;
+    background: url(../images/bgThree.jpg);
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    .title{
+        i{
+            font-size: 70px;
+            color: $bg_light;
+            font-weight: 600;
+        }
+    }
+    .main{
+        width: 75%;
+        .mySlides {
+            display: none;}
+        h3{
+          font-size: 25px;
+          text-transform: capitalize;
+          font-weight: 500;
+          text-align: center;
+          color: $text_light;
+          letter-spacing: 3px;
+        }
+        p{
+            text-align: justify;
+            letter-spacing: 2px;
+            line-height: 1.5;
+            font-size: 18px;
+            font-weight: 200;
+            font-style: italic;
+            color: $text_light;
+        }
+        .dot {
+            height: 6px;
+            width: 6px;
+            margin: 0 2px;
+            background-color: $text_light;
+            border-radius: 50%;
+            display: inline-block;
+            transition: background-color 0.6s ease;
+        }
+        .active {
+            background-color: $bg_light;
+        }
+        .fade {
+            animation-name: slideFade;
+            animation-duration: 3s;
+        }
+       
+    }   
+    @keyframes slideFade {
+        from {opacity: .5} 
+        to {opacity: 1}
+    }
+}

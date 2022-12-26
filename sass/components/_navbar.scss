@@ -1,0 +1,93 @@
+#header{
+    position: fixed;
+    top: 0;
+    width: 100%;
+    z-index: 9999;
+#nav_bar{
+    background-color: rgba(0, 0, 0,0.5);
+    position: relative;
+    .toggle{
+        height: 25px;
+        width: 25px;
+        color: $text_light;
+        cursor: pointer;
+        display: none;
+        i{
+            font-size: 25px;
+        }
+    }
+    .logo{
+        padding: 15px 0;
+    }
+    .menu li{
+        transition: .4s;
+        a{
+            padding: 22px 27px;
+            font-size: 13px;
+            font-weight: 500;
+            text-transform: uppercase;
+            color: $text_light;
+            transition: .4s;
+            position: relative;
+            &::after{
+                content: '';
+                position: absolute;
+                height: 5px;
+                width: 5px;
+                background-color: $bg_light;
+                top: 50%;
+                transform: translateY(-50%);
+                right: 0;
+                border-radius: 50%;
+            }
+            &:hover{
+                color: $bg_light;
+            }
+        }
+        .dropdown{
+            position: absolute;
+            background: $bg_dark;
+            width: 100%;
+            left: 0;
+            perspective: 2000;
+	        transform-origin: top;
+            animation-fill-mode: forwards;
+	        transform: rotateX(90deg);
+	        visibility:hidden;
+	        opacity:0;
+	        transition: transform 0.5s ease, opacity 0.25s ease .05s, visibility .1s ease .3s;
+            ul{
+                padding: 15px 0;
+                a{
+                    display: block;
+                    width: 100%;
+                    padding: 10px;
+                    border-bottom: 1px solid #303030;
+                    transition: .4s;
+                    font-size: 13px;
+                    font-weight: 400;
+                    text-transform: uppercase;
+                    letter-spacing: 3px;
+                    word-spacing: 3px;
+                    color: #716c6c;
+                    &::after{
+                        width: 0;
+                        height: 0;
+                    }
+                    &:hover{
+                        color: $bg_dark;
+                        background-color: $bg_light;
+                    }
+                }
+            }
+        }
+        &:hover .dropdown{
+            opacity: 1;
+	        z-index: 1000;
+	        transform: rotateX(0);
+	        visibility:visible;
+	        transition: transform 1s ease, opacity 0.5s ease;
+        }
+    }
+}
+}

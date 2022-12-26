@@ -1,0 +1,35 @@
+#footer{
+    padding: 50px 0;
+    background-color: $bg_dark;
+    p{
+        font-size: 14px;
+        color: $text_dark;
+        span{
+            color: $bg_light;
+        }
+    }
+    .logo{
+        display: flex;
+        .brand_logo{
+            height: 30px;
+            width: 30px;
+            transition: .4s;
+            background-color: $bg_dark;
+            cursor: pointer;
+            i{
+                font-size: 16px;
+                line-height: 30px;
+                display: block;
+                text-align: center;
+                color: $text_light;
+                transition: .4s;
+            }
+            &:hover{
+                background-color: $bg_light;
+            }
+            &:hover i{
+                color: $bg_dark;
+            }
+        }
+    }
+}

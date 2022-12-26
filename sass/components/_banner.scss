@@ -1,0 +1,53 @@
+#banner{
+    button{
+        width: 50px ;
+        height: 50px ;
+        background-color: $bg_dark;
+        top: 50%;
+        transform: translateY(-50%);
+        transition: .4s;
+        &:hover{
+            background-color: #151515;
+        }
+    }
+    .carousel-control-prev{
+        left: 5%;
+        transform: translateX(-95%);
+    }
+    img{
+        height: 100vh;
+    }
+    .info{
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%,-50%);
+        p{
+            font-size: 15px;
+            font-weight: 300;
+            letter-spacing: 7px;
+            text-transform: uppercase;
+            color: $text_light;
+            text-align: center;
+        }
+        .title{
+            h3{
+                color: $text_light;
+                font-size: 120px;
+                font-weight: 300;
+                text-transform: uppercase;
+            }
+        }
+        .button{
+            button{
+                @include button($bg_dark,$bg_light);
+                width: max-content;
+                display: block;
+                margin: 40px auto;
+                font-weight: 400;
+                letter-spacing: 4px;
+                text-transform: uppercase;
+            }
+        }
+    }
+}

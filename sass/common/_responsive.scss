@@ -1,0 +1,507 @@
+@media (max-width:992px){
+    header{
+        position: sticky;
+        #nav_bar{
+            background-color: $bg_dark !important;
+            .toggle{
+                display: block !important;
+            }
+            #nav_menu{
+                display: none;
+            .menu{
+                ul{
+                    padding: 0;
+                    flex-wrap: wrap;
+                    li{
+                        width: 100%;
+                        a{
+                            width: 100%;
+                            padding-top: 10px;
+                            padding-bottom: 10px;
+                        }
+                        .dropdown{
+                            width: 50%;
+                            left: 50%;
+                            padding: 16px 0;
+                            a{
+                                padding: 7px 5px;
+                                font-size: 11px;
+                            }
+                        }
+                        
+                    }
+                }
+            }
+        }
+    }
+    }
+    }
+@media (min-width :320px) and (max-width:576px){
+    #banner{
+        .info{
+            p {    
+                font-size: 10px;
+                letter-spacing: 3px;
+            }
+            .title {
+                h3{
+                    font-size: 40px;
+                }
+            }
+            .button{
+                button{
+                    font-size: 10px;
+                    font-weight: 500;
+                    letter-spacing: 3px;
+                }
+            }
+        }
+        button {
+            width: 30px;
+            height: 30px;
+            .carousel-control-next-icon, .carousel-control-prev-icon {
+                width: 1rem;
+                height: 1rem;
+            }
+        }
+        .carousel-control-prev {
+            left: 0;
+            top: 50%;
+            transform: translateX(0)translateY(-50%);
+        }
+        
+    }
+    #service{
+        .top{
+            flex-wrap: wrap;
+            .img{
+                width: 100%;
+                height: 200px;
+                .big{
+                    width: 70%;
+                    top: 0;
+                    left: 50%;
+                    transform: translateX(-50%);
+                    height: 150px;
+                    z-index: 2;
+                }
+                .small{
+                    height: 100px;
+                }
+                .xsmall{
+                    height: 80px;
+                }
+            }
+            .details{
+                width: 90%;
+                margin: auto;
+                h3{
+                    font-size: 20px;
+                }
+                p{
+                    font-size: 12px;
+                }
+            }
+
+        }
+        .main{
+            .title{
+                padding: 80px 0;
+                &::after{
+
+                    font-size: 180px;
+                }
+                h4{
+                    
+                    &::after{
+                        width: 100%;
+                    }
+                }
+            }
+            .info{
+                .text{
+                    p{
+                        line-height: 1.4;
+                        font-size: 13px;
+                    }
+                }
+
+            }
+        } 
+
+    }
+    #service_btm{
+        .title{
+            i{
+                font-size: 40px;
+            }
+        }
+        .main{
+            width: 100%;
+            h3{
+                font-size: 20px;
+                letter-spacing: 2px;
+            }
+            p{
+                font-size: 14px;
+            }
+        }
+    }
+    #product{
+        #product_banner{
+            padding: 20px 0;
+            .main{
+                flex-wrap: wrap;
+                .text{
+                    h3{
+                        font-size: 20px;
+                    }
+                }
+                .button{
+                    button{
+                        font-size: 14px;
+                    }
+                }
+            }
+        }
+        #main{
+            .item{
+                flex-wrap: wrap;
+                .item_child_one{
+                    width: 100%;
+                    height: 100px;
+                }
+                .item_child_two{
+                    width: 100%;
+                    .img{
+                        height: 100px;
+                        .overlay{
+                            p{
+                                font-size: 12px;
+                            }
+                        }
+                    }
+                    button{
+                        width: 20px;
+                        height: 20px;
+                    }
+                    span{
+                        width: 15px;
+                        height: 15px;
+                    }
+                }
+            }
+        }
+    }
+    #portfolio {
+        .title{
+            padding: 80px 0;
+            &::after{
+
+                font-size: 180px;
+            }
+            h4{
+                
+                &::after{
+                    width: 100%;
+                }
+            }
+        }
+        .main{
+            .my-5{
+                margin: 10px 0 !important;
+            }
+            .box{
+                margin-bottom: 10px !important;
+            }
+        }
+    }
+    #team_member{
+        .title{
+            padding: 80px 0;
+            &::after{
+
+                font-size: 180px;
+            }
+            h4{
+                
+                &::after{
+                    width: 100%;
+                }
+            }
+        }
+        .main{
+            .info{
+                p{
+                    font-size: 14px;
+                }
+            }
+        }
+    }
+    #project{
+        padding: 50px 0;
+        #projectCount{
+            font-size: 120px;
+        }
+        .button{
+            button{
+                font-size: 14px;
+                letter-spacing: 4px;
+                word-spacing: 5px;
+            }
+        }
+    }
+    #footer{
+        padding: 25px 0;
+        img{
+            display: block;
+            margin-bottom: 10px;
+        }
+        p{
+            text-align: center;
+        }
+        .logo{
+            display: flex;
+            margin: auto;
+
+        }
+    }
+}
+@media (min-width :576px) and (max-width:768px){
+    #banner{
+        button{
+            height: 30px;
+            width: 30px;
+        }
+        .carousel-control-next-icon, .carousel-control-prev-icon {
+            width: 1rem;
+            height: 1rem;
+        }
+        .carousel-control-prev{
+            left: 0;
+            top: 50%;
+            transform: translate(0)translateY(-50%);
+        }
+        .info{
+            p{
+                font-size: 14px;
+                letter-spacing: 5px;
+            }
+            .title{
+                h3{
+                    font-size: 70px;
+                }
+            }
+            .button{
+                button{
+                    letter-spacing: 3px;
+                }
+            }
+        }
+    }
+    #service{
+        .top{
+            flex-wrap: wrap;
+            .img{
+                width: 75%;
+                margin: auto;
+                height: 250px;
+                .big{
+                    height: 200px;
+                }
+                .small{
+                    height: 160px;
+                }
+                .xsmall{
+                    height: 130px;
+                }
+            }
+            .details{
+                width: 100%;
+                h3{
+                    font-size: 20px;
+                }
+            }
+        }
+        .main{
+            .title{
+                padding: 90px 0;
+                &::after{
+                    font-size: 200px;
+                }
+            }
+        }
+    }
+    #service_btm{
+        padding: 75px 0;
+        .main{
+            width: 100%;
+        }
+    }
+    #product{
+        #product_banner{
+            padding: 20px 0;
+            .main{
+                flex-wrap: wrap;
+                .text{
+                    h3{
+                        font-size: 20px;
+                        font-weight: 600;
+                    }
+                }
+            }
+        }
+        #main{
+            .item{
+                flex-wrap: wrap;
+                .item_child_one{
+                    width: 100%;
+                    height: 100px;
+                }
+                .item_child_two{
+                    width: 100%;
+                    .img{
+                        height: 200px;
+                    }
+                }
+            }
+        }
+    }
+    #portfolio{
+        .title{
+            padding: 90px 0;
+            &::after{
+                font-size: 200px;
+            }
+        }
+        .main{
+            .my-5{
+                margin: 20px 0 !important;
+            }
+            .box{
+                margin-bottom: 10px;
+            }
+        }
+    }
+    #team_member {
+        .title{
+            padding: 90px 0;
+            &::after{
+                font-size: 200px;
+            }
+        }
+    }
+    #footer{
+        padding: 20px 0;
+        img{
+            display: block;
+            margin-bottom: 10px;
+        }
+        .logo{
+            margin: auto;
+        }
+    }
+}
+@media (min-width :768px) and (max-width:992px){
+    #banner {
+        .info {
+            p{
+                letter-spacing: 6px;
+            }
+            .title{
+                h3{
+                    font-size: 100px;
+
+                }
+            }
+        }
+        .carousel-control-prev{
+            left: 0;
+            top: 50%;
+            transform: translateX(0)translateY(-50%);
+        }
+    }
+    #service{
+        .top{
+            .img{
+                height: 350px;
+                .big{
+                    height: 250px;
+                }
+                .small{
+                    height: 170px;
+                }
+                .xsmall{
+                    height: 130px;
+                }
+            }
+            .details{
+                padding: 0;
+                p{
+                    font-size: 14px;
+                }
+                h3{
+                    font-size: 25px;
+                }
+            }
+        }
+    }
+    #service_btm{
+        padding: 60px 0;
+        .main{
+            width: 75%;
+        }
+    }
+    #product{
+        #product_banner{
+            padding: 20px 0;
+            .main{
+                flex-wrap: wrap;
+                .text{
+                    h3{
+                        font-size: 20px;
+                        font-weight: 600;
+                    }
+                }
+            }
+        }
+        #main{
+            .item{
+                flex-wrap: wrap;
+                .item_child_one{
+                    width: 100%;
+                    height: 100px;
+                }
+                .item_child_two{
+                    width: 100%;
+                    .img{
+                        height: 200px;
+                    }
+                }
+            }
+        }
+    }
+    #portfolio{
+        .main{
+            .my-5{
+                margin: 15px 0 !important;
+            }
+            .box{
+                margin-bottom: 10px;
+            }
+        }
+    }
+    #footer{
+        padding: 10px 0;
+        p{
+            text-align: center;
+        }
+        img{
+            display: block;
+            margin-bottom: 10px;
+        }
+        .logo{
+            margin: auto;
+        }
+    }
+}

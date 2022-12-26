@@ -1,0 +1,26 @@
+#team_member{
+    background-color: $bg_dark;
+    padding: 30px 0;
+    .title{
+        @include title('03');
+        h4{
+            @include titleName();
+        }
+    }
+    .main{
+        .info{
+            h3{
+                color: $text_light;
+                font-size: 16px;
+                font-weight: 500;
+                text-transform: capitalize;
+            }
+            p{
+                color: $text_dark;
+                font-size: 15px;
+                font-weight: 400;
+                text-transform: capitalize;
+            }
+        }
+    }
+}

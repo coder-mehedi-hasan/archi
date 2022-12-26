@@ -1,0 +1,39 @@
+#portfolio{
+    background-color: $bg_dark;
+    .title{
+        @include title('02');
+        h4{
+            @include titleName();
+        }
+    }
+    .main{
+        .box{
+            width: 80px;
+            height: 80px;
+            background-color: $bg_light;
+            i{
+                font-size: 40px;
+                text-align: center;
+                display: block;
+                line-height: 80px;
+                color: $bg_dark;
+            }
+        }
+        .text{
+            h3{
+                font-size: 18px;
+                color: $text_light;
+                font-weight: 500;
+                text-transform: capitalize;
+                margin-bottom: 15px;
+            }
+            p{
+                margin-bottom: 20px;
+                color: $text_dark;
+                font-size: 13px;
+                font-weight: 400;
+                line-height: 1.5;
+            }
+        }
+    }
+}

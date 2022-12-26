@@ -1,0 +1,30 @@
+.imgPopup{
+    background-color: rgb(0,0,0,0.7);
+    width: 100%;
+    position: absolute;
+    top: 0;
+    z-index: 999999;
+    cursor: zoom-out;
+    .main{
+        height: 100vh;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        .img{
+            height: 500px;
+            img{
+                height: 100%;
+                animation: imganimate 0.4s linear;
+            }
+        }
+    }
+}
+@keyframes imganimate {
+    from{
+        transform: scale(0.2);
+    }
+    to{
+        transform: scale(1);
+    }
+    
+}
